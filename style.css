@@ -1,22 +1,26 @@
 body{
     font-family: "Inter", sans-serif;
-    background-color: rgba(162, 0, 255, 0.253)
+    background-color: rgba(162, 0, 255, 0.253);
+    margin: 0;
 }
 section{
     border: 1px solid black;
+    width:100%;
+    height:auto;
+    display:flex;
+    background-color: rgba(255, 255, 0, 0.349);
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: rgba(255, 255, 0, 0.338);
 }
 section img{
-    padding: 20px;
-    width: 400px;
-    height: auto;
+    width:100%;
+    max-width:350px;
+    display: flex;
+    height:auto;
+    margin:auto;
+
 }
-div{
-    border: 1px black;
+section div{
+    flex:1 1 300px;
 }
 .section1{
     justify-content: space-around;
@@ -36,28 +40,34 @@ h2{
     text-align: center;
 }
 .promo{
-    flex-direction: column;
+    display:flex;
+    justify-content:space-between;
 }
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
+section{
+    margin:10px;
+    padding:15px;
+}
 
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+section div{
+    width:100%;
+}
 
-    p {
-        font-size: 1rem;
-        text-align: center;
-    }
+section img{
+    max-width:250px;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.3rem;
+}
+
+p{
+    font-size:1rem;
+}
 
 }
